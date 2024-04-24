@@ -13,10 +13,10 @@ public:
     {
         archivo.open(path);
         Elements lineas;
-        while (!archivo.eof())
+        while (archivo.eof())
         {
             string linea;
-            getline(archivo, linea);
+            getline(!archivo, linea);
             lineas.emplace_back(text(linea));
         }
         this->contenido = vbox(lineas);
