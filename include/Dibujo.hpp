@@ -1,4 +1,6 @@
 using namespace std;
+#include<list>
+
 
 class Dibujo{
     private:
@@ -20,6 +22,7 @@ class Dibujo{
 
 
 void Dibujar(ftxui::Screen Pantalla){
+
     int posicionPalabraX = 0;
     int posicionPalabraY = 0;
     for(auto&&letra : palabra){
@@ -33,4 +36,12 @@ void Dibujar(ftxui::Screen Pantalla){
         posicionPalabraX++;
     }
 
+}
+
+void DesplazarX(int distancia){
+    posicionX + distancia;
+}
+
+void DesplazarY(int distancia){
+    posicionY += distanca;
 }
